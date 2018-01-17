@@ -1,118 +1,116 @@
 Ruby Intro
 =============
 
-This 3-part homework gives some basic practice in Ruby as well as
-getting you accustomed to making testing a regular part of your workflow.
+Esta tarea de 3 partes da alguna práctica básica en Ruby, así como
+acostumbrándote a hacer que las pruebas sean una parte regular de tu flujo de trabajo.
 
-**NOTE: Do not clone this repo to your workspace. Fork it first, then clone your fork.**
+** NOTA: No clone este repositorio en su área de trabajo. Bóveda primero, luego clona tu tenedor. **
 
-Learning Goals
+Metas de aprendizaje
 --------------
-After completing this assignment, you will know how to:
+Después de completar esta tarea, sabrá cómo:
 
-* Write simple code that uses basic constructs in the Ruby language, including methods and arguments, conditionals, string and array manipulation, regular expressions, and basic object-oriented programming mechanisms
-* Understand the Ruby project conventions for where code files and test files are located in a project's directory hierarchy
-* Run individual tests or suites of tests using the RSpec unit testing tool
-* Understand the basic syntax of RSpec unit tests
- 
-Overview
+* Escribir código simple que utiliza construcciones básicas en el lenguaje Ruby, incluidos métodos y argumentos, condicionales, manipulación de cadenas y matrices, expresiones regulares y mecanismos básicos de programación orientada a objetos
+* Comprender las convenciones del proyecto Ruby para saber dónde se encuentran los archivos de código y de prueba en la jerarquía de directorios de un proyecto
+* Ejecute pruebas individuales o conjuntos de pruebas utilizando la herramienta de prueba de la unidad RSpec
+* Comprender la sintaxis básica de las pruebas de unidad RSpec
+ 
+Visión de conjunto
 --------
 
-**You may find the [Ruby documentation at ruby-doc.org](https://ruby-doc.org) helpful to have on hand.**
+** Puede encontrar la [documentación de Ruby en ruby-doc.org] (https://ruby-doc.org) útil para tener a mano. **
 
-The repo for this assigment follows a fairly standard Ruby convention for codebases: the code
-files are stored in `lib/` and the test files are stored in `spec/`.
-(We use the RSpec unit-testing framework; if we were using Ruby's default
-framework, known as `Test::Unit`, the test files would be under
-`test/`.)
+El informe para esta tarea sigue una convención Ruby bastante estándar para las bases de código: el código
+los archivos se almacenan en `lib /` y los archivos de prueba se almacenan en `spec /`.
+(Usamos el marco de prueba de unidad RSpec, si usáramos el valor predeterminado de Ruby
+marco, conocido como `Test :: Unit`, los archivos de prueba estarían bajo
+`test /`.)
 
-We've placed "starter code" in `lib/ruby_intro.rb`; when you're all done, you
-can submit this single file to the autograder.
+Colocamos el "código de inicio" en `lib / ruby_intro.rb`; cuando hayas terminado,
+puede enviar este único archivo al autograder.
 
-However, you can test each of the 3 parts separately.  The files
-`spec/part[123]_spec.rb` contain RSpec tests for each of the three
-parts.  For example, to test your answers to Part 1, say `rspec
-spec/part1_spec.rb`.  `rspec` with no arguments runs the tests in all
-the files `spec/*_spec.rb`.
+Sin embargo, puedes probar cada una de las 3 partes por separado. Los archivos
+`spec / part [123] _spec.rb` contiene pruebas de RSpec para cada uno de los tres
+partes. Por ejemplo, para probar sus respuestas a la Parte 1, diga `rspec
+spec / part1_spec.rb`. `rspec` sin argumentos ejecuta las pruebas en todos
+los archivos `spec / * _ spec.rb`.
 
-* The line numbers in the RSpec error report will
-give you guidance as to which tests failed.  (You can check the [RSpec
-documentation](http://rspec.info) to see how the `.rspec` file can be
-used to customize the output format.)
+* Los números de línea en el informe de error RSpec
+darle orientación sobre qué pruebas fallaron. (Puede consultar el [RSpec
+documentación] (http://rspec.info) para ver cómo puede ser el archivo `.rspec`
+utilizado para personalizar el formato de salida.)
 
-To ensure you have the rspec gem installed you need bundler and can then 
-run bundle install like so:
+Para asegurarse de tener instalada la gema rspec, necesita un paquete y luego puede
+Ejecute la instalación del paquete así:
 
-```sh
+`` `sh
 $ gem install bundler
 $ cd hw-ruby-intro
-$ bundle
-```
+$ paquete
+`` `
 
-When the above completes successfully you'll have RSpec installed and can
-run `rspec` from the command line to test your code.
+Cuando lo anterior se complete con éxito, tendrá RSpec instalado y podrá
+ejecuta `rspec` desde la línea de comando para probar tu código.
+
+# 1. Matrices, Hashes y Enumerables
+
+Consulte la [documentación de Ruby 2.x] (http://ruby-doc.org) en `Array`,
+`Hash` y` Enumerable` ya que podrían ayudar tremendamente con estos
+ceremonias. :-)
+
+0. Defina un método `sum (array)` que tome una matriz de enteros como argumento y devuelva la suma de sus elementos. Para una matriz vacía, debe devolver cero. Ejecute las pruebas asociadas a través de: `$ rspec spec / part1_spec.rb: 5`
+
+0. Defina un método `max_2_sum (array)` que toma una matriz de enteros como argumento y devuelve la suma de sus dos elementos más grandes. Para una matriz vacía, debe devolver cero. Para una matriz con solo un elemento, debe devolver ese elemento. Ejecute las pruebas asociadas a través de: `$ rspec spec / part1_spec.rb: 23`
+
+0. Defina un método `sum_to_n? (Array, n)` que tome una matriz de enteros y un entero adicional, n, como argumentos y devuelve verdadero si dos elementos de la matriz de enteros suman a n. `sum_to_n? ([], n)` debería devolver falso para cualquier valor de n, por definición. Ejecute las pruebas asociadas mediante: `$ rspec spec / part1_spec.rb: 42`
+
+Puede verificar su progreso en todo lo anterior ejecutando `$ rspec spec / part1_spec.rb`.
+
+# 2. Cadenas y expresiones regulares
+
+Verifique la documentación en String y Regexp ya que podrían ayudar tremendamente con estos ejercicios. :-)
+
+0. Defina un método `hello (nombre)` que tome una cadena que represente un nombre y devuelva la cadena "Hola", concatenada con el nombre. Ejecute las pruebas asociadas a través de: `$ rspec -e '#hello' spec / part2_spec.rb`
+
+0. Defina un método `starts_with_consonant? (S)` que tome una cadena y devuelva verdadero si comienza con una consonante y falso de lo contrario. (Para nuestros propósitos, una consonante es cualquier letra que no sea A, E, I, O, U.) NOTA: ¡asegúrese de que funciona tanto para mayúsculas como minúsculas y para no letras! Ejecute pruebas asociadas a través de: `$ rspec -e '#starts_with_consonant?' spec / part2_spec.rb`
+
+0. Defina un método `binary_multiple_of_4? (S)` que tome una cadena y devuelva verdadero si la cadena representa un número binario que es un múltiplo de 4. NOTA: ¡asegúrese de que devuelve falso si la cadena no es un número binario válido! Ejecute las pruebas asociadas a través de: `$ rspec -e '# binary_multiple_of_4?' spec / part2_spec.rb`
+
+Puede verificar su progreso en todo lo anterior ejecutando `$ rspec spec / part2_spec.rb`.
+
+# 3. Conceptos básicos orientados a objetos
 
 
-# 1. Arrays, Hashes, and Enumerables
+Define una clase `BookInStock` que representa un libro con un ISBN
+número, `isbn`, y precio del libro como un número de coma flotante,
+`precio`, como atributos. Ejecute pruebas asociadas a través de: `$ rspec -e 'getters y setters' spec / part3_spec.rb`
 
-Check the [Ruby 2.x documentation](http://ruby-doc.org) on `Array`,
-`Hash` and `Enumerable` as they could help tremendously with these
-exercises. :-) 
+El constructor debe aceptar el número de ISBN
+(una cadena, ya que en la vida real los números ISBN pueden comenzar con cero y pueden
+incluir guiones) como primer argumento y precio como segundo argumento, y
+debería levantar `ArgumentError` (uno de los tipos de excepciones incorporadas de Ruby) si
+el número de ISBN es la cadena vacía o si el precio es menor que o
+igual a cero. Incluya los getters y setters apropiados para estos
+atributos. Ejecute pruebas asociadas a través de: `$ rspec -e 'constructor' spec / part3_spec.rb`
 
-0. Define a method `sum(array)` that takes an array of integers as an argument and returns the sum of its elements. For an empty array it should return zero.  Run associated tests via:  `$ rspec spec/part1_spec.rb:5`
+Incluye un método `price_as_string` que devuelve el precio de
+el libro formateado con un signo de dólar principal y dos decimales, es decir, un precio
+de 20 debe formatear como "$ 20.00" y un precio de 33.8 debe formatear como
+"$ 33.80". Ejecute pruebas asociadas a través de: `$ rspec -e '#price_as_string' spec / part3_spec.rb`
 
-0. Define a method `max_2_sum(array)` which takes an array of integers as an argument and returns the sum of its two largest elements. For an empty array it should return zero. For an array with just one element, it should return that element. Run associated tests via:  `$ rspec spec/part1_spec.rb:23`
+Puede verificar su progreso en todo lo anterior ejecutando `rspec spec / part3_spec.rb`.
 
-0. Define a method `sum_to_n?(array, n)` that takes an array of integers and an additional integer, n, as arguments and returns true if any two elements in the array of integers sum to n. `sum_to_n?([], n)` should return false for any value of n, by definition. Run associated tests via:  `$ rspec spec/part1_spec.rb:42`
+## Más desafíos
 
-You can check your progress on the all the above by running `$ rspec spec/part1_spec.rb`.
+* Intenta obtener la configuración con
+un marco de prueba automatizado como [guard] (http://code.tutsplus.com/tutorials/testing-your-ruby-code-with-guard-rspec-pry--cms-19974) o [autotest] (https: //rubygems.org/gems/autotest). Guard o AutoTest se pueden configurar de modo que
+ejecutarán todas las pruebas en `spec /`, pero cada vez que edite y guarde
+su archivo de código, las pruebas se vuelven a ejecutar automáticamente, por lo que no tiene que
+ejecútelos manualmente. Como veremos más adelante, este es el "ver cómo falla la prueba"
+parte del TDD o proceso de desarrollo basado en pruebas: escriba las pruebas antes
+usted escribe el código, mira cómo falla la prueba, completa el código y guarda el archivo de código,
+¡luego mira el pase de prueba!
 
-# 2. Strings and Regular Expressions
-
-Check the documentation on String and Regexp as they could help tremendously with these exercises. :-)
-
-0. Define a method `hello(name)` that takes a string representing a name and returns the string "Hello, " concatenated with the name. Run associated tests via:  `$ rspec -e '#hello' spec/part2_spec.rb`
-
-0. Define a method `starts_with_consonant?(s)` that takes a string and returns true if it starts with a consonant and false otherwise. (For our purposes, a consonant is any letter other than A, E, I, O, U.) NOTE: be sure it works for both upper and lower case and for nonletters!  Run associated tests via:  `$ rspec -e '#starts_with_consonant?' spec/part2_spec.rb`
-
-0. Define a method `binary_multiple_of_4?(s)` that takes a string and returns true if the string represents a binary number that is a multiple of 4. NOTE: be sure it returns false if the string is not a valid binary number!  Run associated tests via:  `$ rspec -e '#binary_multiple_of_4?' spec/part2_spec.rb`
-
-You can check your progress on the all the above by running `$ rspec spec/part2_spec.rb`.
-
-# 3. Object Oriented Basics
-
-
-Define a class `BookInStock` which represents a book with an ISBN
-number, `isbn`, and price of the book as a floating-point number,
-`price`, as attributes. Run associated tests via:  `$ rspec -e 'getters and setters' spec/part3_spec.rb` 
-
-The constructor should accept the ISBN number
-(a string, since in real life ISBN numbers can begin with zero and can
-include hyphens) as the first argument and price as second argument, and
-should raise `ArgumentError` (one of Ruby's built-in exception types) if
-the ISBN number is the empty string or if the price is less than or
-equal to zero.  Include the proper getters and setters for these
-attributes. Run associated tests via:  `$ rspec -e 'constructor' spec/part3_spec.rb`
-
-Include a method `price_as_string` that returns the price of
-the book formatted with a leading dollar sign and two decimal places, that is, a price
-of 20 should format as "$20.00" and a price of 33.8 should format as
-"$33.80". Run associated tests via:  `$ rspec -e '#price_as_string' spec/part3_spec.rb`
-
-You can check your progress on the all the above by running `rspec spec/part3_spec.rb`.
-
-## More Challenges
-
-* Try getting setup with 
-an automated test framework such as [guard](http://code.tutsplus.com/tutorials/testing-your-ruby-code-with-guard-rspec-pry--cms-19974) or [autotest](https://rubygems.org/gems/autotest).  Guard or AutoTest can be set up so that 
-they will run all the tests in `spec/`, but every time you edit and save 
-your code file, the tests are automatically re-run, so you don't have to 
-run them manually.  As we'll see later, this is the "watch the test fail" 
-part of the TDD or test-driven process of development: write the tests before
-you write the code, watch the test fail, fill in the code and save the code file, 
-then watch the test pass!
-
-* Try pairing using the [one-undermanship pair programming style](http://www.agileventures.org/remote-pair-programming/pair-programming-protocols)
-
+* Pruebe el emparejamiento utilizando el [estilo de programación de pares de una mano] (http://www.agileventures.org/remote-pair-programming/pair-programming-protocols)
 
 
