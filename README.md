@@ -2,23 +2,23 @@ Ruby Intro
 =============
 
 Esta tarea de 3 partes da alguna práctica básica en Ruby, así como
-acostumbrándote a hacer que las pruebas sean una parte regular de tu flujo de trabajo.
+hacer que las pruebas (test) sean una parte regular de tu flujo de trabajo.
 
-** NOTA: No clone este repositorio en su área de trabajo. Bóveda primero, luego clona tu tenedor. **
+
 
 Metas de aprendizaje
 --------------
 Después de completar esta tarea, sabrá cómo:
 
-* Escribir código simple que utiliza construcciones básicas en el lenguaje Ruby, incluidos métodos y argumentos, condicionales, manipulación de cadenas y matrices, expresiones regulares y mecanismos básicos de programación orientada a objetos
+* Escribir código simple que utilice construcciones básicas en el lenguaje Ruby, incluidos métodos y argumentos, condicionales, manipulación de cadenas y matrices, expresiones regulares y mecanismos básicos de programación orientada a objetos
 * Comprender las convenciones del proyecto Ruby para saber dónde se encuentran los archivos de código y de prueba en la jerarquía de directorios de un proyecto
-* Ejecute pruebas individuales o conjuntos de pruebas utilizando la herramienta de prueba de la unidad RSpec
-* Comprender la sintaxis básica de las pruebas de unidad RSpec
+* Ejecutar pruebas individuales o conjuntos de pruebas utilizando la herramienta de prueba de la unidad RSpec
+* Comprender la sintáxis básica de las pruebas de unidad RSpec
  
 Visión de conjunto
 --------
 
-** Puede encontrar la [documentación de Ruby en ruby-doc.org] (https://ruby-doc.org) útil para tener a mano. **
+** Puede encontrar útil la documentación de Ruby en ruby-doc.org (https://ruby-doc.org) . **
 
 El informe para esta tarea sigue una convención Ruby bastante estándar para las bases de código: el código
 los archivos se almacenan en `lib /` y los archivos de prueba se almacenan en `spec /`.
@@ -26,8 +26,7 @@ los archivos se almacenan en `lib /` y los archivos de prueba se almacenan en `s
 marco, conocido como `Test :: Unit`, los archivos de prueba estarían bajo
 `test /`.)
 
-Colocamos el "código de inicio" en `lib / ruby_intro.rb`; cuando hayas terminado,
-puede enviar este único archivo al autograder.
+Colocamos el "código de inicio" en `lib / ruby_intro.rb` .
 
 Sin embargo, puedes probar cada una de las 3 partes por separado. Los archivos
 `spec / part [123] _spec.rb` contiene pruebas de RSpec para cada uno de los tres
@@ -36,12 +35,14 @@ spec / part1_spec.rb`. `rspec` sin argumentos ejecuta las pruebas en todos
 los archivos `spec / * _ spec.rb`.
 
 * Los números de línea en el informe de error RSpec
-darle orientación sobre qué pruebas fallaron. (Puede consultar el [RSpec
-documentación] (http://rspec.info) para ver cómo puede ser el archivo `.rspec`
-utilizado para personalizar el formato de salida.)
+dan orientación sobre qué pruebas fallaron. Puede consultar la documentación RSpec
+ (http://rspec.info) para ver cómo puede ser utilizado el archivo `.rspec`
+ para personalizar el formato de salida.
 
-Para asegurarse de tener instalada la gema rspec, necesita un paquete y luego puede
+Para asegurarse de tener instalada la gema (librería) rspec, necesita un paquete
 Ejecute la instalación del paquete así:
+
+**** pendiente corregir ***
 
 `` `sh
 $ gem install bundler
