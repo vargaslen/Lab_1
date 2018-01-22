@@ -1,7 +1,7 @@
 Ruby Intro
 =============
 
-Esta tarea de 3 partes da alguna práctica básica en Ruby, así como
+Esta tarea de 3 partes brinda alguna práctica básica en Ruby, así como
 hacer que las pruebas (test) sean una parte regular de tu flujo de trabajo.
 
 
@@ -113,5 +113,3 @@ usted escribe el código, mira cómo falla la prueba, completa el código y guar
 ¡luego mira el pase de prueba!
 
 * Pruebe el emparejamiento utilizando el [estilo de programación de pares de una mano] (http://www.agileventures.org/remote-pair-programming/pair-programming-protocols)
-
-
