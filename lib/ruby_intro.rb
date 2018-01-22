@@ -4,6 +4,16 @@
 
 def sum arr
   # YOUR CODE HERE
+  if arr.length > 0
+    sum = 0
+    arr.each do |e|
+      sum += e
+    end
+    return sum
+  else
+    return 0
+  end
+
 end
 
 def max_2_sum arr
