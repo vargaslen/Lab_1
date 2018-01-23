@@ -1,6 +1,6 @@
 Objetivos
 
-o	Ganar un poco de base en Ruby 
+o	Ganar un poco de base en Ruby
 https://www.codecademy.com/tracks/ruby
 o	Instalar control de versiones:
 https://desktop.github.com/		# para windows
@@ -97,16 +97,3 @@ de 20 debe formatear como "$ 20.00" y un precio de 33.8 debe formatear como
 "$ 33.80". Ejecute pruebas asociadas a través de: `$ rspec -e '#price_as_string' spec / part3_spec.rb`
 
 Puede verificar su progreso en todo lo anterior ejecutando `rspec spec / part3_spec.rb`.
-
-## Más desafíos
-
-* Intenta obtener la configuración con
-un marco de prueba automatizado como [guard] (http://code.tutsplus.com/tutorials/testing-your-ruby-code-with-guard-rspec-pry--cms-19974) o [autotest] (https: //rubygems.org/gems/autotest). Guard o AutoTest se pueden configurar de modo que
-ejecutarán todas las pruebas en `spec /`, pero cada vez que edite y guarde
-su archivo de código, las pruebas se vuelven a ejecutar automáticamente, por lo que no tiene que
-ejecútelos manualmente. Como veremos más adelante, este es el "ver cómo falla la prueba"
-parte del TDD o proceso de desarrollo basado en pruebas: escriba las pruebas antes
-usted escribe el código, mira cómo falla la prueba, completa el código y guarda el archivo de código,
-¡luego mira el pase de prueba!
-
-* Pruebe el emparejamiento utilizando el [estilo de programación de pares de una mano] (http://www.agileventures.org/remote-pair-programming/pair-programming-protocols)
