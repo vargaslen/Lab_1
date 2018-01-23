@@ -38,7 +38,7 @@ dan orientación sobre qué pruebas fallaron. Puede consultar la documentación 
 
 Consulte la [documentación de Ruby 2.x] (http://ruby-doc.org) en `Array`,`Hash` y` Enumerable` ya que ayudaría mucho con estos ejercicios.
 
-0. Define un método `sum (array)` que tome una matriz de enteros como argumento y devuelva la suma de sus elementos. Para una matriz vacía, debe devolver cero. Ejecute las pruebas asociadas a través de: `$ rspec spec / part1_spec.rb: 5`
+0. Define un método `sum (array)` que tome una matriz de enteros como argumento y devuelva la suma de sus elementos. Para una matriz vacía, debe devolver cero. Ejecute las pruebas asociadas ejecutando: `$ rspec spec / part1_spec.rb: 5`
 
 0. Defina un método `max_2_sum (array)` que toma una matriz de enteros como argumento y devuelve la suma de sus dos elementos más grandes. Para una matriz vacía, debe devolver cero. Para una matriz con solo un elemento, debe devolver ese elemento. Ejecute las pruebas asociadas a través de: `$ rspec spec / part1_spec.rb: 23`
 
