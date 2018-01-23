@@ -1,14 +1,13 @@
 Ruby Intro
 =============
 
-Esta tarea de 3 partes da alguna práctica básica en Ruby, así como
-hacer que las pruebas (test) sean una parte regular de tu flujo de trabajo.
+Esta tarea de 3 partes da alguna práctica básica en Ruby, así como también hace que las pruebas (test) sean una parte regular de tu flujo de trabajo.
 
 
 
 Metas de aprendizaje
 --------------
-Después de completar esta tarea, sabrá cómo:
+Después de completar esta tarea, sabrás cómo:
 
 * Escribir código simple que utilice construcciones básicas en el lenguaje Ruby, incluidos métodos y argumentos, condicionales, manipulación de cadenas y matrices, expresiones regulares y mecanismos básicos de programación orientada a objetos
 * Comprender las convenciones del proyecto Ruby para saber dónde se encuentran los archivos de código y de prueba en la jerarquía de directorios de un proyecto
@@ -20,46 +19,26 @@ Visión de conjunto
 
 ** Puede encontrar útil la documentación de Ruby en ruby-doc.org (https://ruby-doc.org) . **
 
-El informe para esta tarea sigue una convención Ruby bastante estándar para las bases de código: el código
-los archivos se almacenan en `lib /` y los archivos de prueba se almacenan en `spec /`.
-(Usamos el marco de prueba de unidad RSpec, si usáramos el valor predeterminado de Ruby
-marco, conocido como `Test :: Unit`, los archivos de prueba estarían bajo
-`test /`.)
+El informe para esta tarea sigue una convención Ruby bastante estándar para las bases de código: los archivos de código fuente se almacenan en `lib /` y los archivos de prueba se almacenan en `spec /`.
 
 Colocamos el "código de inicio" en `lib / ruby_intro.rb` .
 
 Sin embargo, puedes probar cada una de las 3 partes por separado. Los archivos
-`spec / part [123] _spec.rb` contiene pruebas de RSpec para cada uno de los tres
-partes. Por ejemplo, para probar sus respuestas a la Parte 1, diga `rspec
+`spec / part [123] _spec.rb` contiene pruebas de RSpec para cada uno de las tres partes. Por ejemplo, para probar sus respuestas a la Parte 1, tipee  `rspec
 spec / part1_spec.rb`. `rspec` sin argumentos ejecuta las pruebas en todos
 los archivos `spec / * _ spec.rb`.
 
 * Los números de línea en el informe de error RSpec
 dan orientación sobre qué pruebas fallaron. Puede consultar la documentación RSpec
- (http://rspec.info) para ver cómo puede ser utilizado el archivo `.rspec`
- para personalizar el formato de salida.
+ (http://rspec.info) para ver cómo puede ser utilizado el archivo `.rspec` para personalizar el formato de salida.
 
-Para asegurarse de tener instalada la gema (librería) rspec, necesita un paquete
-Ejecute la instalación del paquete así:
 
-**** pendiente corregir ***
-
-`` `sh
-$ gem install bundler
-$ cd hw-ruby-intro
-$ paquete
-`` `
-
-Cuando lo anterior se complete con éxito, tendrá RSpec instalado y podrá
-ejecuta `rspec` desde la línea de comando para probar tu código.
 
 # 1. Matrices, Hashes y Enumerables
 
-Consulte la [documentación de Ruby 2.x] (http://ruby-doc.org) en `Array`,
-`Hash` y` Enumerable` ya que podrían ayudar tremendamente con estos
-ceremonias. :-)
+Consulte la [documentación de Ruby 2.x] (http://ruby-doc.org) en `Array`,`Hash` y` Enumerable` ya que ayudaría mucho con estos ejercicios.
 
-0. Defina un método `sum (array)` que tome una matriz de enteros como argumento y devuelva la suma de sus elementos. Para una matriz vacía, debe devolver cero. Ejecute las pruebas asociadas a través de: `$ rspec spec / part1_spec.rb: 5`
+0. Define un método `sum (array)` que tome una matriz de enteros como argumento y devuelva la suma de sus elementos. Para una matriz vacía, debe devolver cero. Ejecute las pruebas asociadas a través de: `$ rspec spec / part1_spec.rb: 5`
 
 0. Defina un método `max_2_sum (array)` que toma una matriz de enteros como argumento y devuelve la suma de sus dos elementos más grandes. Para una matriz vacía, debe devolver cero. Para una matriz con solo un elemento, debe devolver ese elemento. Ejecute las pruebas asociadas a través de: `$ rspec spec / part1_spec.rb: 23`
 
@@ -113,5 +92,3 @@ usted escribe el código, mira cómo falla la prueba, completa el código y guar
 ¡luego mira el pase de prueba!
 
 * Pruebe el emparejamiento utilizando el [estilo de programación de pares de una mano] (http://www.agileventures.org/remote-pair-programming/pair-programming-protocols)
-
-
