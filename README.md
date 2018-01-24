@@ -48,7 +48,7 @@ Puede verificar su progreso en todo lo anterior ejecutando `$ rspec spec / part1
 
 # 2. Cadenas y expresiones regulares
 
-Verifique la documentación en String y Regexp ya que podrían ayudar tremendamente con estos ejercicios. :-)
+Verifique la documentación en String y Regexp ya que te ayudarán mucho con estos ejercicios. :-)
 
 0. Defina un método `hello (nombre)` que tome una cadena que represente un nombre y devuelva la cadena "Hola", concatenada con el nombre. Ejecute las pruebas asociadas a través de: `$ rspec -e '#hello' spec / part2_spec.rb`
 
