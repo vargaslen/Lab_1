@@ -63,6 +63,16 @@ end
 
 def binary_multiple_of_4? s
   # YOUR CODE HERE
+  raise "No es String" if !(s.instance_of?(String))
+  s_array = s.split("")
+  es_bin = true
+  s_array.each do |s_bit|
+    es_bin = s_bit =~ /[10]/
+    break if !(es_bin)
+  end
+  return false if !(es_bin)
+  return true if (s_array[s.length - 1] == "0" && s_array[s.length - 2] == "0")
+  return false
 end
 
 # Part 3
