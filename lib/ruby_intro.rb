@@ -4,34 +4,10 @@
 
 def sum arr
   # YOUR CODE HERE
-  if arr.length > 0
-    sum = 0
-    arr.each do |e|
-      sum += e
-    end
-    return sum
-  else
-    return 0
-  end
-
 end
 
 def max_2_sum arr
   # YOUR CODE HERE
-  raise "No es arreglo" if !(arr.instance_of?(Array))
-  return 0 if arr.empty?
-  arr.each do |e|
-    raise "Elemento no entero" if !(e.integer?)
-  end
-  arr.sort!
-  suma = 0
-  2.times do |i|
-    e = arr.pop
-    e = 0 if e == nil
-    suma += e
-  end
-  return suma  
-
 end
 
 def sum_to_n? arr, n
