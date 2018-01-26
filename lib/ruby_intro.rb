@@ -79,4 +79,19 @@ end
 
 class BookInStock
 # YOUR CODE HERE
+
+attr_accessor :isbn
+attr_accessor :price
+
+def initialize(isbn,price)
+    raise ArgumentError.new("No es String") if !(isbn.instance_of?(String))
+    raise ArgumentError.new("Cadena vacía") if isbn.empty?
+    raise ArgumentError.new("No numérico") unless price.is_a?(Numeric)
+    raise ArgumentError.new("Precio incorrecto") if price <= 0
+
+    @isbn= isbn
+    @price= price
+end
+
+
 end
