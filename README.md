@@ -79,17 +79,11 @@ Puede verificar su progreso en todo lo anterior ejecutando `$ rspec spec / part2
 # 3. Conceptos básicos orientados a objetos
 
 
-Define una clase `BookInStock` que representa un libro con un ISBN
-número, `isbn`, y precio del libro como un número de coma flotante,
-`precio`, como atributos. Ejecute pruebas asociadas a través de: `$ rspec -e 'getters y setters' spec / part3_spec.rb`
+Define una clase `BookInStock` que representa un libro con un número ISBN ( International Standard Book Number, No. de  digitos: 13 (previamente 10)
+Ejemplo: 978-3-16-148410-0), `isbn`, y precio del libro como un número de coma flotante,`precio`, como atributos. Ejecute pruebas asociadas a través de: `$ rspec -e 'getters y setters' spec / part3_spec.rb`  
 
 El constructor debe aceptar el número de ISBN
-(una cadena, ya que en la vida real los números ISBN pueden comenzar con cero y pueden
-incluir guiones) como primer argumento y precio como segundo argumento, y
-debería levantar `ArgumentError` (uno de los tipos de excepciones incorporadas de Ruby) si
-el número de ISBN es la cadena vacía o si el precio es menor que o
-igual a cero. Incluya los getters y setters apropiados para estos
-atributos. Ejecute pruebas asociadas a través de: `$ rspec -e 'constructor' spec / part3_spec.rb`
+(una cadena, ya que en la vida real los números ISBN pueden comenzar con cero y pueden incluir guiones) como primer argumento y precio como segundo argumento, y debería generar `ArgumentError` (uno de los tipos de excepciones incorporadas de Ruby) si el número de ISBN es la cadena vacía o si el precio es menor que oigual a cero. Incluya los getters y setters apropiados para estos atributos. Ejecute pruebas asociadas a través de: `$ rspec -e 'constructor' spec / part3_spec.rb`
 
 Incluye un método `price_as_string` que devuelve el precio de
 el libro formateado con un signo de dólar principal y dos decimales, es decir, un precio
