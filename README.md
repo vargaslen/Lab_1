@@ -1,3 +1,21 @@
+Objetivos
+
+o	Ganar un poco de base en Ruby
+https://www.codecademy.com/tracks/ruby
+o	Instalar control de versiones:
+https://desktop.github.com/		# para windows
+
+o	Instalar Ruby on Rails:
+http://rubyonrails.org.es/instala.html	# plataformas varias
+
+https://medium.com/ruby-on-rails-web-application-development/how-to-install-rubyonrails-on-windows-7-8-10-complete-tutorial-2017-fc95720ee059
+
+o	Instalar Rspec (ejecución de pruebas)
+Desde el IDE (Atom) instalado en el paso anterior (u otro de tu preferencia), edita el archivo Gemfile y agrega la línea: gem 'rspec'.
+Ubícate en tu directorio Lab_1 y ejecuta: bundle update
+Esto instalará el soporte para ejecutar los tests que se piden en este laboratorio.
+
+
 Ruby Intro
 =============
 
@@ -48,7 +66,7 @@ Puede verificar su progreso en todo lo anterior ejecutando `$ rspec spec / part1
 
 # 2. Cadenas y expresiones regulares
 
-Verifique la documentación en String y Regexp ya que te ayudarán mucho con estos ejercicios. :-)
+Verifique la documentación en String y Regexp ya que podrían ayudar tremendamente con estos ejercicios. :-)
 
 0. Defina un método `hello (nombre)` que tome una cadena que represente un nombre y devuelva la cadena "Hola", concatenada con el nombre. Ejecute las pruebas asociadas a través de: `$ rspec -e '#hello' spec / part2_spec.rb`
 
@@ -62,15 +80,10 @@ Puede verificar su progreso en todo lo anterior ejecutando `$ rspec spec / part2
 
 
 Define una clase `BookInStock` que representa un libro con un número ISBN ( International Standard Book Number, No. de  digitos: 13 (previamente 10)
-Ejemplo: 978-3-16-148410-0), `isbn`, y precio del libro como un número de coma flotante,`precio`, como atributos. Ejecute pruebas asociadas a través de: `$ rspec -e 'getters y setters' spec / part3_spec.rb`   
+Ejemplo: 978-3-16-148410-0), `isbn`, y precio del libro como un número de coma flotante,`precio`, como atributos. Ejecute pruebas asociadas a través de: `$ rspec -e 'getters y setters' spec / part3_spec.rb`  
 
 El constructor debe aceptar el número de ISBN
-(una cadena, ya que en la vida real los números ISBN pueden comenzar con cero y pueden
-incluir guiones) como primer argumento y precio como segundo argumento, y
-debería levantar `ArgumentError` (uno de los tipos de excepciones incorporadas de Ruby) si
-el número de ISBN es la cadena vacía o si el precio es menor que o
-igual a cero. Incluya los getters y setters apropiados para estos
-atributos. Ejecute pruebas asociadas a través de: `$ rspec -e 'constructor' spec / part3_spec.rb`
+(una cadena, ya que en la vida real los números ISBN pueden comenzar con cero y pueden incluir guiones) como primer argumento y precio como segundo argumento, y debería generar `ArgumentError` (uno de los tipos de excepciones incorporadas de Ruby) si el número de ISBN es la cadena vacía o si el precio es menor que oigual a cero. Incluya los getters y setters apropiados para estos atributos. Ejecute pruebas asociadas a través de: `$ rspec -e 'constructor' spec / part3_spec.rb`
 
 Incluye un método `price_as_string` que devuelve el precio de
 el libro formateado con un signo de dólar principal y dos decimales, es decir, un precio
