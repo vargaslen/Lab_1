@@ -93,5 +93,8 @@ def initialize(isbn,price)
     @price= price
 end
 
+def price_as_string
+  return "$%.2f" % self.price
+end
 
 end
